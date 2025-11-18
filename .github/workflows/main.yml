@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'  # Или другая версия Node.js, которую вы используете
+        node-version: '23.10.0'  # Или другая версия Node.js, которую вы используете
 
     - name: Install dependencies
       run: npm install
