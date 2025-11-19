@@ -1,16 +1,9 @@
 import './Card.css';
-import React, { useState } from 'react';
-import { Section, Cell,Image,List } from "@telegram-apps/telegram-ui";
+import { Section, Cell,List } from "@telegram-apps/telegram-ui";
 import { WeatherTab } from '../Bars/TabBar';
 
 
-export const WeatherCard = () => {
-  const [forecastRange, setForecastRange] = useState('hourly');
-
-  const handleRangeChange = (event) => {
-    setForecastRange(event.target.value);
-  };
-
+export const WeatherCard = () => {  
   return (    
     <List>
     <Section    
