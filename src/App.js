@@ -1,15 +1,12 @@
-import './App.css';
 import '@telegram-apps/telegram-ui/dist/styles.css';
-import { AppRoot} from '@telegram-apps/telegram-ui';
 import { WeatherCard } from './components/Cards/Card';
+import './App.css';
 
 
-
-export const App = () => (
-
-  <AppRoot>
-    <WeatherCard/>      
-  </AppRoot>
+export const App = () => ( 
+    <div className='App'>
+    <WeatherCard/>   
+    </div>
 );
 
 export default App
