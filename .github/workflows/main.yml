@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '23.10.0'  # Или другая версия Node.js, которую вы используете
+        node-version: '14'  # Или другая версия Node.js, которую вы используете
 
     - name: Install dependencies
       run: npm install
@@ -25,7 +25,8 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
+      id: deployment
       uses: peaceiris/actions-gh-pages@v3
-      with:
+      with:     
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
