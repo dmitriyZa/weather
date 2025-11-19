@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Section, Cell,Image,List } from "@telegram-apps/telegram-ui";
-import { MyButton } from '../Buttons/Button';
+
 
 export const WeatherCard = () => {
   const [forecastRange, setForecastRange] = useState('hourly');
