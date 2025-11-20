@@ -1,4 +1,4 @@
-import { Section, Cell,List } from "@telegram-apps/telegram-ui";
+import { Section,List } from "@telegram-apps/telegram-ui";
 import { WeatherTab } from '../Bars/TabBar';
 
 
