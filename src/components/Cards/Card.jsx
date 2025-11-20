@@ -1,4 +1,3 @@
-import './Card.css';
 import { Section, Cell,List } from "@telegram-apps/telegram-ui";
 import { WeatherTab } from '../Bars/TabBar';
 
@@ -7,11 +6,11 @@ export const WeatherCard = () => {
   return (    
     <List>
     <Section    
-      header="Прогноз Погоды"
-    >        
-      <Cell>
-        <div>Сегодня: Ясно, +25°C</div> {/* Пример прогноза на сегодня */}
-      </Cell>
+    >      
+     <Section.Header large>
+    <span role="img" aria-label="umbrella" style={{ marginRight: '8px' }}>☂️</span> {/* Иконка зонтика */}
+          Прогноз Погоды
+  </Section.Header>    
       <Cell>
         <WeatherTab/>
       </Cell>     

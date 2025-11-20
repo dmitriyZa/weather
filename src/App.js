@@ -3,10 +3,8 @@ import { WeatherCard } from './components/Cards/Card';
 import './App.css';
 
 
-export const App = () => ( 
-    <div className='App'>
-    <WeatherCard/>   
-    </div>
+export const App = () => (    
+    <WeatherCard/>       
 );
 
 export default App

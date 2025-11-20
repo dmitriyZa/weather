@@ -3,9 +3,10 @@ import { Tabbar } from "@telegram-apps/telegram-ui";
 
 // Пример данных для табов, представляющих различные диапазоны прогноза
 const tabs = [
-  { id: 'hourly', text: "Прогноз почасовой", Icon: () => <span>⏰</span> },
-  { id: 'weekly', text: "Прогноз на неделю", Icon: () => <span>📅</span> },
-  { id: 'monthly', text: "Прогноз на месяц", Icon: () => <span>🗓️</span> },
+  { id: 'today', text: "Прогноз на сегодня", Icon: () => <span>🌞</span> },    // Иконка солнца для прогноза на сегодня
+  { id: 'hourly', text: "Прогноз почасовой", Icon: () => <span>⏱️</span> },   // Иконка секундомера для почасового прогноза
+  { id: 'weekly', text: "Прогноз на неделю", Icon: () => <span>📆</span> },   // Иконка календаря для недельного прогноза
+  { id: 'monthly', text: "Прогноз на месяц", Icon: () => <span>🗓️</span> },  // Иконка листка календаря для месячного прогноза
 ];
 
 export const WeatherTab = () => {
@@ -13,6 +14,8 @@ export const WeatherTab = () => {
 
   const renderContent = () => {
     switch(currentTab) {
+      case 'today':
+        return <div>Сегодня: Ясно, +25°C </div>;
       case 'hourly':
         return <div>Данные прогноза почасовой</div>;
       case 'weekly':
@@ -25,7 +28,7 @@ export const WeatherTab = () => {
   };
 
   return (
-    <div style={{ height: 550 }}>
+    <div style={{ height: 735 }}>
       <Tabbar>
         {tabs.map(({ id, text, Icon }) => (
           <Tabbar.Item 
