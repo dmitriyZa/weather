@@ -28,7 +28,7 @@ export const WeatherTab = () => {
   };
 
   return (
-    <div style={{ height: 735 }}>
+    <div >
       <Tabbar>
         {tabs.map(({ id, text, Icon }) => (
           <Tabbar.Item 
