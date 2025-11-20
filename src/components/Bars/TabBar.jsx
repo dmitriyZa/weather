@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './TabBar.css'
 import { Tabbar } from "@telegram-apps/telegram-ui";
 
 // Пример данных для табов, представляющих различные диапазоны прогноза
@@ -28,7 +29,9 @@ export const WeatherTab = () => {
   };
 
   return (
-    <div >
+    <div className="container">
+      
+      
       <Tabbar>
         {tabs.map(({ id, text, Icon }) => (
           <Tabbar.Item 
@@ -41,7 +44,8 @@ export const WeatherTab = () => {
           </Tabbar.Item>
         ))}
       </Tabbar>
-      <div>
+      
+      <div className="content">
         {renderContent()}
       </div>
     </div>
