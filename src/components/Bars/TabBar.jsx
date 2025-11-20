@@ -41,7 +41,7 @@ export const WeatherTab = () => {
           </Tabbar.Item>
         ))}
       </Tabbar>
-      <div style={{ marginTop: 20 }}>
+      <div>
         {renderContent()}
       </div>
     </div>
