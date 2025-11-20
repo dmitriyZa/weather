@@ -1,12 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Занять всю высоту видимой области браузера */
-  margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .content {
+  height: 100vh;
   flex-grow: 1;
   overflow-y: auto; /* Позволяет прокручивать содержимое, если оно больше контейнера */
 }
