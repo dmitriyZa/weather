@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './TabBar.css'
-import { Tabbar,Section,Cell } from "@telegram-apps/telegram-ui";
+import { Tabbar } from "@telegram-apps/telegram-ui";
 
 // Пример данных для табов, представляющих различные диапазоны прогноза
 const tabs = [
