@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Today from "../DateWeather/Today";
 import './TabBar.css'
 import { Tabbar } from "@telegram-apps/telegram-ui";
 
@@ -16,7 +17,7 @@ export const WeatherTab = () => {
   const renderContent = () => {
     switch(currentTab) {
       case 'today':
-        return <div>Сегодня: Ясно, +25°C </div>;
+        return <Today/>;
       case 'tomorrow':
         return <div>Данные прогноза на завтра</div>;
       case 'weekly':

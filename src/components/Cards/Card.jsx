@@ -9,8 +9,9 @@ export const WeatherCard = () => {
     <Section 
     >      
      <Section.Header large>
-    <span role="img" aria-label="umbrella" style={{ marginRight: '8px' }}>☂️</span> {/* Иконка зонтика */}
-          Прогноз Погоды
+      <div style={{display:'flex'}}>
+     Прогноз Погоды <span role="img" aria-label="umbrella" style={{marginLeft:'8px'}}>☂️</span>
+     </div>
   </Section.Header>                       
         <Cell>
         <WeatherTab/>        
