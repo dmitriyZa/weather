@@ -9,7 +9,7 @@ const GifComponent = ({ gifName = 'rain', size = 'large' }) => {
   };
 
   const sizes = {
-    large: '125px',
+    large: '100px',
     small: '40px',
   };
 

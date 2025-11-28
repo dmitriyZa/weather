@@ -24,7 +24,7 @@ export default function Tomorrow() {
                                    
                 </div>                    
           </Cell>
-          <Cell style={{paddingLeft:'0px'}}>              
+          <Cell style={{paddingLeft:'0px',paddingRight:'0px',marginLeft:'0px'}}>              
                <div style={{display:'flex'}}>             
                 <span>Вечером</span>
                 <span style={{marginLeft:'50px'}}>+7°C</span>
@@ -32,7 +32,7 @@ export default function Tomorrow() {
                                    
                 </div>                    
           </Cell>
-           <Cell style={{paddingLeft:'0px'}}>              
+           <Cell style={{paddingLeft:'0px',paddingRight:'0px',marginLeft:'0px'}}>              
                <div style={{display:'flex'}}>             
                 <span>Ночью</span>
                 <span style={{marginLeft:'50px'}}>+7°C</span>

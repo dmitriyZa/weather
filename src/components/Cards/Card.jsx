@@ -1,6 +1,6 @@
 import { Section,List, Cell } from "@telegram-apps/telegram-ui";
 import { WeatherTab } from '../Bars/TabBar';
-import './Card.css'
+
 
 
 export const WeatherCard = () => {  
