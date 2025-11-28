@@ -6,3 +6,7 @@
 span {
     display: block;
 }
+
+#Cell{
+    flex: 1; 
+}

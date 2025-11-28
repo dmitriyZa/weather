@@ -1,10 +1,26 @@
 import React from 'react';
-import rain from './Gifs/rain.gif'
+import rainGif from './Gifs/rain.gif';
+import snowGif from './Gifs/snow.gif';
 
-const GifComponent = () => {
+const GifComponent = ({ gifName = 'rain', size = 'large' }) => {
+  const gifs = {
+    rain: rainGif,
+    snow: snowGif,
+  };
+
+  const sizes = {
+    large: '125px',
+    small: '40px',
+  };
+
   return (
-    <div style={{ marginTop: '10px'}}>      
-      <img src={rain} width='125px' height='125px' alt="Animated GIF" />
+    <div>
+      <img
+        src={gifs[gifName]}
+        width={sizes[size]}
+        height={sizes[size]}
+        alt="Animated GIF"
+      />
     </div>
   );
 };

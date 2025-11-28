@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Today from "../DateWeather/Today";
+import Today from "../DateWeather/Today/Today";
 import './TabBar.css'
 import { Tabbar } from "@telegram-apps/telegram-ui";
+import Tomorrow from "../DateWeather/Tomorrow/Tomorrow";
 
 // Пример данных для табов, представляющих различные диапазоны прогноза
 // Попробовать сделать Section для подвала
@@ -19,7 +20,7 @@ export const WeatherTab = () => {
       case 'today':
         return <Today/>;
       case 'tomorrow':
-        return <div>Данные прогноза на завтра</div>;
+        return <Tomorrow/>;
       case 'weekly':
         return <div>Данные прогноза на неделю</div>;
       default:
