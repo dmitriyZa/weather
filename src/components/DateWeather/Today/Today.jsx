@@ -16,14 +16,14 @@ export default function Today() {
         </div>
       </div>
       
-        <div style={{ display:'flex', flexWrap: 'wrap' }}>
+        <div style={{ display:'flex', flexWrap: 'wrap',justifyContent:'center'}}>
           <Cell style={{paddingLeft:'0px'}}>              
                 <span>15:00</span>
                 <span>
                   <GifComponent gifName='snow' size='small'/>
                 </span>
                 <span>+7°C</span>            
-          </Cell>
+          </Cell >
           <Cell style={{paddingLeft:'0px'}}>              
                 <span>16:00</span>
                 <span>
@@ -72,21 +72,7 @@ export default function Today() {
                   <GifComponent gifName='snow' size='small'/>
                 </span>
                 <span>+2°C</span>            
-          </Cell>       
-          <Cell style={{paddingLeft:'0px'}}>              
-                <span>23:00</span>
-                <span>
-                  <GifComponent gifName='snow' size='small'/>
-                </span>
-                <span>+2°C</span>            
-          </Cell>       
-          <Cell style={{paddingLeft:'0px'}}>              
-                <span>00:00</span>
-                <span>
-                  <GifComponent gifName='snow' size='small'/>
-                </span>
-                <span>+2°C</span>            
-          </Cell>                   
+          </Cell>   
         </div>       
     </div>
   )
