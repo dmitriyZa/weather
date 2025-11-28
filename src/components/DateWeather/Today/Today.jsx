@@ -72,7 +72,21 @@ export default function Today() {
                   <GifComponent gifName='snow' size='small'/>
                 </span>
                 <span>+2°C</span>            
-          </Cell>   
+          </Cell> 
+          <Cell style={{paddingLeft:'0px'}}>              
+                <span>22:00</span>
+                <span>
+                  <GifComponent gifName='snow' size='small'/>
+                </span>
+                <span>+2°C</span>            
+          </Cell>
+          <Cell style={{paddingLeft:'0px'}}>              
+                <span>22:00</span>
+                <span>
+                  <GifComponent gifName='snow' size='small'/>
+                </span>
+                <span>+2°C</span>            
+          </Cell>  
         </div>       
     </div>
   )
